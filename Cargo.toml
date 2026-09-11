@@ -8,7 +8,7 @@ edition = "2021"
 license = "MIT"
 
 [workspace.dependencies]
-tree-sitter = "0.26"
+tree-sitter = "0.27"
 tree-sitter-language = "0.1"
 tree-sitter-html = { package = "tree-sitter-htmlx-html", version = "0.1.16", path = "crates/tree-sitter-html" }
 tree-sitter-htmlx = { version = "0.1.16", path = "crates/tree-sitter-htmlx" }

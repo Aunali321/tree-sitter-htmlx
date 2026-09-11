@@ -125,7 +125,7 @@ fn test_else_if_block_kind_text() {
 
     // Find the else_if_clause (child after the text "1")
     let mut found_else_if = false;
-    for i in 0..if_block.child_count() as u32 {
+    for i in 0..if_block.child_count() {
         let child = if_block.child(i).unwrap();
         if child.kind() == "else_if_clause" {
             found_else_if = true;

@@ -31,7 +31,7 @@ fn capture_texts(query_source: &str, capture_name: &str, source: &str) -> BTreeS
         let Some((query_match, capture_index)) = captures.get() else {
             break;
         };
-        let capture = query_match.captures[*capture_index];
+        let capture = query_match.captures()[*capture_index];
         if capture_names[capture.index as usize] == capture_name {
             texts.insert(
                 capture
